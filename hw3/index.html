@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app">
+    <div id="add-review-page">
+      <h1>Добавить отзыв</h1>
+      <select id="product-select">
+        <option value="">Выберите продукт</option>
+      </select>
+      <input type="text" id="new-product-name" placeholder="Или введите новый продукт">
+      <textarea id="review-text" placeholder="Ваш отзыв"></textarea>
+      <button id="add-review-button">Добавить отзыв</button>
+    </div>
+
+    <div id="view-reviews-page" style="display: none;">
+      <h1>Отзывы о продуктах</h1>
+      <div id="product-list"></div>
+      <div id="review-list" style="display: none;">
+        <h2 id="selected-product"></h2>
+        <ul id="reviews"></ul>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
